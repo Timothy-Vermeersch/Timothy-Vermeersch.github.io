@@ -16,7 +16,7 @@ function update(){
 }
 
 function heatValue(snapshot){
-  if(snapshot.child("heating).val()){
+  if(snapshot.child("heating").val()){
     document.createTextNode("The coils are heating.");
    }else{
     document.createTextNode("The coils are not heating.");
