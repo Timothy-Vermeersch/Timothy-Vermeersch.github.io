@@ -4,11 +4,10 @@ html{
             font-family: "Arial Black";
             background-color: #ff6947;
             margin:-50;
-            border-bottom: 5px solid #515151 ;
+            border-bottom: 5px solid #ededed ;
         }
         #title{
             font-size: 50;
-            padding-top: 25;
             text-align : center;
             color: 	#001c38;
         }
