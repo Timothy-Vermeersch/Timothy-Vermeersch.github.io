@@ -9,6 +9,7 @@ html{
         #title{
             font-size: 50;
             text-align : center;
+            align-content: center;
             color: 	#001c38;
         }
         
