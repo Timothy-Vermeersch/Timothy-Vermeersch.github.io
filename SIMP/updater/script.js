@@ -1,3 +1,4 @@
+
 function update(){
     console.log("Called");
     var ref = database.ref();
@@ -6,9 +7,10 @@ function update(){
   	.then(function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
         var test = document.getElementById("test");
+        var testtwo = document.createTextNode(childSnapshot.child("test").val());
         test.innerHTML = childSnapshot.child("test").val();
   });
   	});
 }
-var ref = database.ref();
+
 window.setInterval(update,100);
