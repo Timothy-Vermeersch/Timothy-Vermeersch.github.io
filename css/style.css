@@ -1,15 +1,12 @@
-html{
-        }
-        #Topbar {
+  #Topbar {
             font-family: "Arial Black";
-            background-color: #ff6947;
-            margin:-50;
-            border-bottom: 5px solid #ededed ;
+            background-color: 	#f0feff;
+            border-bottom: 5px solid #001199 ;
         }
         #title{
             font-size: 50;
+            padding-top: 25;
             text-align : center;
-            align-content: center;
             color: 	#001c38;
         }
         
@@ -18,8 +15,7 @@ html{
             text-align : center;
             color: 	#001c38;
         }
-        #tile{
-            margin-top:51;
-            margin-left:-10;
-            width:1890;
-        }
+
+       #tab{
+             color: #001c38;
+       }
