@@ -10,5 +10,5 @@ function update(){
   });
   	});
 }
-
+var ref = database.ref();
 window.setInterval(update,100);
