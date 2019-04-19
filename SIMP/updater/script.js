@@ -15,4 +15,14 @@ function update(){
   	});
 }
 
+var resetFunc = function resetFunction(buttonId){
+    var ref = database.ref();
+    ref.once("value")
+  	.then(function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            childSnapshot.child("test").ref.set(0);
+  });
+  	});
+}
+
 window.setInterval(update,100);
