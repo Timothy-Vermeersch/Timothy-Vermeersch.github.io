@@ -2,7 +2,7 @@
 function update(){
     console.log("Called");
     var ref = database.ref();
-    console.log(ref);
+    console.log(childSnapshot.child("test").val());
     ref.once("value")
   	.then(function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
