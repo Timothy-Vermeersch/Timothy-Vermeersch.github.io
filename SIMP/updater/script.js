@@ -8,6 +8,8 @@ function update(){
         snapshot.forEach(function(childSnapshot) {
         var test = document.getElementById("test");
         var testtwo = document.createTextNode(childSnapshot.child("test").val());
+        var para = document.createElement("P");
+        para.append(testtwo);
         test.innerHTML = childSnapshot.child("test").val();
   });
   	});
