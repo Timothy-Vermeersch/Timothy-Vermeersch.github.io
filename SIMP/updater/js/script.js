@@ -6,6 +6,7 @@ function update(){
   	.then(function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
         var test = document.getElementById("test");
+        var testtwo = document.createTextNode(childSnapshot.child("test").val());
         test.innerHTML = childSnapshot.child("test").val();
   });
   	});
