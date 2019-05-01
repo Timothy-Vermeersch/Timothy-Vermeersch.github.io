@@ -3,11 +3,16 @@
     <head>
         <title>PyroFlask</title>
         <div id = "Topbar">
-            <h1>Info Page sans info</h1>
+            <h1 id = "title">Informational page for the SIMP project</h1>
+            <div id = "tab">
+               <a href = "https://timothy-vermeersch.github.io/SIMP/">Home</a>
+                <a href = "https://timothy-vermeersch.github.io/SIMP/updater/">Updater</a>
+            </div>
         </div>
     </head>
     <body>
-        
+       <p>This is a project from the students of Branham High School to make a school wide interactive map project. More info will be added as the project progresses</p>
+      <p id = "Credit">Created by: Timothy Vermeersch</p>
     </body>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script>
@@ -23,6 +28,6 @@
   firebase.initializeApp(config);
 </script>
     </script>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script src="js/script.js"></script>
 </html>
