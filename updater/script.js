@@ -29,9 +29,11 @@ function insertHeader(){
             '</div>';
 }
 
-function getValue(String keyPath){
+function getValue(keyPath){
 	//We currently have no server implementation so server communication will go here and return the value associated with the keyPath such as "calendar/2017-05-02/eventList"
 	return "Error: no server implementation, placeholder";
 }
+
+console.log("Testing");
 insertHeader();
 //window.setInterval(updateCalendar,10000);
