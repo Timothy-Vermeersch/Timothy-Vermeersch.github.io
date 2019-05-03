@@ -1,7 +1,7 @@
        #Topbar {
             font-family: "Arial Black";
             background-color: 	#f0feff;
-            background-image: url(Resources/simpHead.png);
+            background-image: url(simpHead.png);
             border-bottom: 5px solid #001199 ;
         }
         #title{
@@ -26,9 +26,7 @@
        		padding-left: 18%;
        }
        
-       body{
-       		background-image: url(Resources/branhamMap.png);
-       		background-position: 50% -25%;
- 			background-repeat: no-repeat;
-  			background-size: cover; 
-       }
+	   img {
+  max-width: 100%;
+  height: auto;
+}
