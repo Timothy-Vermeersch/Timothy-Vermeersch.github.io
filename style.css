@@ -1,9 +1,11 @@
-              #Topbar {
+                         #Topbar {
             font-family: "Arial Black";
-            background-color: 	#cbf8fb;
+            background-color: 	#ffffff;
             background-image: url(Resources/simpHead.png);
             border: 2px solid #a8a8a8 ;
         	border-radius: 12px;
+        	background-repeat:no-repeat;
+        	background-position:center;
         }
         #title{
             font-size: 50;
@@ -37,5 +39,5 @@
 }
 
 html{
-	background-image: linear-gradient(to bottom right, #03127a, #9c9ab2);
+	background-image: linear-gradient(to bottom right, #400cbc, #06004d);
 }
