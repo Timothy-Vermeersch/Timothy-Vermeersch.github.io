@@ -1,21 +1,34 @@
        #Topbar {
             font-family: "Arial Black";
             background-color: 	#f0feff;
+            background-image: url(simpHead.png);
             border-bottom: 5px solid #001199 ;
         }
         #title{
             font-size: 50;
-            padding-top: 25;
             text-align : center;
             color: 	#001c38;
         }
         
         #sub{
-            margin-top:-20;
             text-align : center;
             color: 	#001c38;
         }
 
        #tab{
-             color: #001c38;
+             color: #8e8e8e;
+       }
+       
+       a{
+       		color: #474747;
+       		//background-color: #d8d8d8;
+       		//background-color: rgba(234, 234, 234, 0.5);
+       		padding-left: 18%;
+       }
+       
+       body{
+       		background-image: url(branhamMap.png);
+       		background-position: 50% -25%;
+ 			background-repeat: no-repeat;
+  			background-size: cover; 
        }
