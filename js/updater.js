@@ -9,7 +9,7 @@ function updateCalendar(){
 }
 
 function getMonday() {
-  d = new Date(d);
+  d = new Date();
   var day = d.getDay();
   var diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
   return new Date(d.setDate(diff));
