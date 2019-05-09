@@ -16,9 +16,10 @@ function getMonday() {
 }
 
 function getDateString(d){
-	var dd = String(today.getDate()).padStart(2, '0');
-	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-	var yyyy = today.getFullYear();
+	var dd = String(d.getDate()).padStart(2, '0');
+	var mm = String(d.getMonth() + 1).padStart(2, '0'); //January is 0!
+	var yyyy = d.getFullYear();
+	console.log(yyyy+"-"+mm+"-"+dd);
 	return yyyy+"-"+mm+"-"+dd;
 }
 
