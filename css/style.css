@@ -40,6 +40,8 @@
             background-color: 	#f0feff;
             background-image: url(Resources/simpHead.png);
             border-top: 5px solid #f0feff ;
+		background-repeat:no-repeat;
+        	background-position:center;
             
        }
        
