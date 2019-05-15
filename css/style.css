@@ -1,7 +1,7 @@
-                         #Topbar {
+       #Topbar {
             font-family: "Arial Black";
-            background-color: 	#ffffff;
-            background-image: url(Resources/simpHead.png);
+            background-color: 	#f0feff;
+            background-image: url(simpHead.png);
             border: 2px solid #a8a8a8 ;
         	border-radius: 12px;
         	background-repeat:no-repeat;
@@ -22,22 +22,42 @@
              color: #8e8e8e;
        }
        
+       
        a{
        		color: #474747;
        		//background-color: #d8d8d8;
        		//background-color: rgba(234, 234, 234, 0.5);
-       		padding-left: 1%;
-       		buffing-left:33%;
+       		padding-left: 18%;
+       }
+       
+       #BottomBar{
+       		
+          position: fixed;
+          	left:0px;
+  			bottom: 0;
+  			width: 100%;
+       		font-family: "Arial Black";
+            background-color: 	#f0feff;
+            background-image: url(simpHead.png);
+            border-top: 5px solid #f0feff ;
+            
+       }
+       
+       #BottomBar input[type=text]{
+       		margin-left:42%;
+       	}
+
+       
+       h2{
+       		text-align : center;
+       }
+       
+       html{
+      	 background-image: linear-gradient(to bottom right, #400cbc, #06004d);
        }
        
 	   img {
-	   	margin-top: 1%;
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #a8a8a8 ;
-        	border-radius: 12px;
-}
-
-html{
-	background-image: linear-gradient(to bottom right, #400cbc, #06004d);
+	   	margin-top:2px;
+  		max-width: 100%;
+  		height: auto;
 }
