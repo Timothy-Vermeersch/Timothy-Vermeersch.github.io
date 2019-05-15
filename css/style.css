@@ -1,7 +1,7 @@
        #Topbar {
             font-family: "Arial Black";
             background-color: 	#f0feff;
-            background-image: url(simpHead.png);
+            background-image: url(Resources/simpHead.png);
             border: 2px solid #a8a8a8 ;
         	border-radius: 12px;
         	background-repeat:no-repeat;
@@ -38,7 +38,7 @@
   			width: 100%;
        		font-family: "Arial Black";
             background-color: 	#f0feff;
-            background-image: url(simpHead.png);
+            background-image: url(Recources/simpHead.png);
             border-top: 5px solid #f0feff ;
             
        }
