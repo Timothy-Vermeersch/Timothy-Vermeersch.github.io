@@ -44,12 +44,27 @@
             background-color: 	#f0feff;
             background-image: url(Resources/simpHead.png);
             border-top: 5px solid #f0feff ;
+		background-repeat:no-repeat;
+        	background-position:center;
             
        }
        
        #BottomBar input[type=text]{
        		margin-left:42%;
        	}
+       	
+       	table{
+       		width:80%;
+       		margin-left:10%;
+       	}
+       	
+       	#classes{
+       		width:50%;
+       	}
+       	
+       	table, th, td {
+  			border: 1px solid black;
+		}
 
        
        h2{
