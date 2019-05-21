@@ -14,7 +14,7 @@
     </head>
     <body>
     <div id = "Map">
-    	<img src = "css/Resources/branhamMap.png" alt = "Map">
+    	<img src = "css/Resources/branhamMap.jpg" alt = "Map">
     </div>
     
     <div target = "bottom" id = "BottomBar">
@@ -38,7 +38,7 @@
 <script>
 	var d = new Date();
 	var month = d.getMonth();
-	document.getElementById("Time").innerHTML = d.getHours() + ":" + d.getMinutes() + "<BR/>" + d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
+	document.getElementById("Time").innerHTML = d.getHours() + ":" + d.getMinutes() + "<BR/>" + (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
 </script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/home.js"></script>
