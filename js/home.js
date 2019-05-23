@@ -32,6 +32,8 @@ function searchBar(){
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
 	var i = 0;
+	document.getElementById("r1").innerHTML = "";
+	document.getElementById("t1").innerHTML = "";
 	console.log(searchInfo);
 	for(var count in info) {
 		  if(info[count].includes(searchInfo)){;
@@ -40,9 +42,9 @@ function searchBar(){
 		  	  document.getElementById("c1").innerHTML = info[i+1];
 		  	  document.getElementById("t1").innerHTML = info[i+2];
 		  	}else if(i%3==1){
-		  		document.getElementById("c1").innerHTML = info[i];
-			  	  document.getElementById("r1").innerHTML = info[i-1];
-			  	  document.getElementById("t1").innerHTML = info[i+1];
+		  		document.getElementById("c1").innerHTML = searchInfo;
+			  	  document.getElementById("r1").innerHTML += info[i-1] + ", ";
+			  	  document.getElementById("t1").innerHTML += info[i+1] + "' ";
 		  	}else if(i%3==2){
 		  		document.getElementById("t1").innerHTML = info[i];
 			  	  document.getElementById("r1").innerHTML = info[i-2];
@@ -51,9 +53,4 @@ function searchBar(){
 		  }
 		  i++
 	}
-	console.log(returnInfo);
 }
-
-
-
-console.log(search("Social Science"));
