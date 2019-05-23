@@ -1,6 +1,6 @@
        #Topbar {
             font-family: "Arial Black";
-            background-color: 	#3b5998;
+            background-color: 	#0d0065;
             background-image: url(Resources/simpHead.png);
             border: 2px solid #a8a8a8 ;
         	border-radius: 12px;
@@ -80,7 +80,7 @@
 	}
 
 	#BottomBar button {
- 		 background-color: #3b5998;
+ 		 background-color: #0d0065;
  		 border: 1px solid #f7f7f7;
  		 color: #8b9dc3;
   	}
