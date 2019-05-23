@@ -36,14 +36,17 @@ function searchBar(){
 	for(var count in info) {
 		  if(info[count].includes(searchInfo)){;
 		  	if(i%3==0){
-			  returnInfo.push(info[i+1]);
-			  returnInfo.push(info[i+2]);
+		  	  document.getElementById("r1").innerHTML = searchInfo;
+		  	  document.getElementById("c1").innerHTML = info[i+1];
+		  	  document.getElementById("t1").innerHTML = info[i+2];
 		  	}else if(i%3==1){
-				  returnInfo.push(info[i-1]);
-				  returnInfo.push(info[i+1]);
+		  		document.getElementById("c1").innerHTML = info[i];
+			  	  document.getElementById("r1").innerHTML = info[i-1];
+			  	  document.getElementById("t1").innerHTML = info[i+1];
 		  	}else if(i%3==2){
-				  returnInfo.push(info[i-1]);
-				  returnInfo.push(info[i+1]);
+		  		document.getElementById("t1").innerHTML = info[i];
+			  	  document.getElementById("r1").innerHTML = info[i-2];
+			  	  document.getElementById("c1").innerHTML = info[i-1];
 		  	}
 		  }
 		  i++
