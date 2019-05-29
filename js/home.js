@@ -9,6 +9,7 @@ function search(searchInfo){
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
 	var i = 0;
+	/**
 	for(var count in info) {
 		  if(info[count].includes(searchInfo)){;
 		  	if(i%3==0){
@@ -24,22 +25,7 @@ function search(searchInfo){
 		  }
 		  i++
 	}
-	return returnInfo;
-}
-
-function searchBar(){
-	var searchInfo = document.getElementById("search").value;
-	if(searchInfo =="emergency"){
-		document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
-		document.getElementById("Topbar").style.backgroundColor = "red";
-		document.getElementById("BottomBar").style.backgroundColor = "red";
-	}
-	var info = getRoomInfo().split("_");
-	var returnInfo = [];
-	var i = 0;
-	document.getElementById("r1").innerHTML = "";
-	document.getElementById("t1").innerHTML = "";
-	console.log(searchInfo);
+	**/
 	for(var count in info) {
 		  if(info[count].includes(searchInfo)){;
 		  	if(i%3==0){
@@ -58,5 +44,151 @@ function searchBar(){
 		  }
 		  i++
 	}
+	return returnInfo;
 }
 
+function searchBar(){
+	var searchInfo = document.getElementById("search").value;
+	if(searchInfo =="emergency"){
+		document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
+		document.getElementById("Topbar").style.backgroundColor = "red";
+		document.getElementById("BottomBar").style.backgroundColor = "red";
+	}
+	var info = getRoomInfo().split("_");
+	var returnInfo = [];
+	var i = 0;
+	console.log(searchInfo);
+	for(var count in info) {
+		  if(info[count].includes(searchInfo)){;
+		  	if(i%3==0){
+		  	  document.getElementById("r1").innerHTML = searchInfo;
+		  	  document.getElementById("c1").innerHTML = info[i+1];
+		  	  document.getElementById("t1").innerHTML = info[i+2];
+		  	}else if(i%3==1){
+		  		document.getElementById("c1").innerHTML = info[i];
+			  	  document.getElementById("r1").innerHTML = info[i-1];
+			  	  document.getElementById("t1").innerHTML = info[i+1];
+		  	}else if(i%3==2){
+		  		document.getElementById("t1").innerHTML = info[i];
+			  	  document.getElementById("r1").innerHTML = info[i-2];
+			  	  document.getElementById("c1").innerHTML = info[i-1];
+		  	}
+		  }
+		  i++
+	}
+<<<<<<< HEAD
+}
+
+=======
+	console.log(returnInfo);
+}
+
+function FindPosition(oElement)
+{
+  if(typeof( oElement.offsetParent ) != "undefined")
+  {
+    for(var posX = 0, posY = 0; oElement; oElement = oElement.offsetParent)
+    {
+      posX += oElement.offsetLeft;
+      posY += oElement.offsetTop;
+    }
+      return [ posX, posY ];
+    }
+    else
+    {
+      return [ oElement.x, oElement.y ];
+    }
+}
+
+function GetCoordinates(e)
+{
+  var PosX = 0;
+  var PosY = 0;
+  var ImgPos;
+  ImgPos = FindPosition(myImg);
+  if (!e) var e = window.event;
+  if (e.pageX || e.pageY)
+  {
+    PosX = e.pageX;
+    PosY = e.pageY;
+  }
+  else if (e.clientX || e.clientY)
+    {
+      PosX = e.clientX + document.body.scrollLeft
+        + document.documentElement.scrollLeft;
+      PosY = e.clientY + document.body.scrollTop
+        + document.documentElement.scrollTop;
+    }
+  PosX = PosX - ImgPos[0];
+  PosY = PosY - ImgPos[1];
+  console.log(PosX, PosY);
+  search(getRoom(PosX, PosY));
+  //return (String)PosX+"-"+(String)PosY;
+}
+
+function getRoom(px, py){
+	for (var key in rooms){
+	 	var x = parseInt(key.split("-")[0]);
+	 	var y = parseInt(key.split("-")[1]);
+	 	var diffX = Math.abs(px-x);
+	 	var diffY = Math.abs(py-y);
+	 	if(diffX < 20 && diffY < 20){
+	 		console.log(rooms[key], key);
+	 		return rooms[key]
+	 	}
+	}
+}
+
+function fillDictionary(){
+	rooms["506-882"] = 7;
+	rooms["590-852"] = 8;
+	rooms["506-916"] = 12;
+	rooms["590-934"] = 11;
+	rooms["546-1174"] = 26;
+	rooms["530-1214"] = 27;
+	rooms["518-1256"] = 28;
+	rooms["498-1296"] = 29;
+	rooms["480-1332"] = 30;
+	rooms["468-1368"] = 31;
+	rooms["446-1406"] = 32;
+	rooms["674-1184"] = 33;
+	rooms["656-1238"] = 34;
+	rooms["636-1290"] = 35;
+	rooms["608-1348"] = 36;
+	//rooms["608-1348"] = 37;
+	rooms["590-1406"] = 37;
+	rooms["836-1168"] = 38;
+	rooms["822-1212"] = 39;
+	rooms["788-1278"] = 40;
+	rooms["744-1388"] = 41;
+	rooms["948-1312"] = 43;
+	rooms["902-1352"] = 44;
+	rooms["1122-1176"] = 46;
+	rooms["1106-1214"] = 47;
+	rooms["1090-1256"] = 48;
+	rooms["1070-1296"] = 49;
+	rooms["1056-1332"] = 50;
+	rooms["1044-1368"] = 51;
+	rooms["1026-1410"] = 52;
+	rooms["1252-1176"] = 53;
+	rooms["1232-1214"] = 54;
+	rooms["1220-1256"] = 55;
+	rooms["1198-1292"] = 56;
+	rooms["1182-1330"] = 57;
+	rooms["1160-1390"] = 58;
+	rooms["1404-1176"] = 59;
+	rooms["1344-1320"] = 60;
+	rooms["1300-1406"] = 61;
+
+
+
+}
+
+var rooms = {};
+var myImg = document.getElementById("Map");
+myImg.onmousedown = GetCoordinates;
+
+fillDictionary();
+
+console.log(search("Social Science"));
+>>>>>>> 61e3f85836965fb1adad346db3a830122914add7
