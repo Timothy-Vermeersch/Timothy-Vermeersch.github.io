@@ -1,6 +1,6 @@
        #Topbar {
             font-family: "Arial Black";
-            background-color: 	#0D0065;
+            background-color: 	#0d0065;
             background-image: url(Resources/simpHead.png);
             border: 2px solid #a8a8a8 ;
         	border-radius: 12px;
@@ -30,7 +30,7 @@
 	   }
        
        #BottomBar{
-       		 background-color: 	#0D0065;
+       		 background-color: #3b5998;
           position: fixed;
           color: 	#ffffff
           	left:0px;
@@ -39,9 +39,8 @@
        		font-family: "Arial Black";
        		 	color: #ffffff;
             background-image: url(Resources/simpHead.png);
-            border-top: 5px solid #ffffff ;
+            background-position: top;
 		background-repeat:no-repeat;
-        	background-position:center;
             
        }
        
@@ -78,4 +77,14 @@
   		max-width: 100%;
   		height: auto;
     		padding-bottom: 200px;
-}
+	}
+
+	#BottomBar button {
+ 		 background-color: #0d0065;
+ 		 border: 1px solid #f7f7f7;
+ 		 color: #8b9dc3;
+  	}
+  	
+  	#searchInputs{
+  		padding-bottom: 5px;
+  	}
