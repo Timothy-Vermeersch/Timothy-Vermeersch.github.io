@@ -74,11 +74,6 @@ function searchBar(){
 	console.log(returnInfo);
 }
 
-function mapTouch(){
-	//Placeholder
-	search(41);
-}
-
 function FindPosition(oElement)
 {
   if(typeof( oElement.offsetParent ) != "undefined")
