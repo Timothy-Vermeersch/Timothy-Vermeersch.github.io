@@ -99,10 +99,13 @@ function GetCoordinates(e)
     }
   PosX = PosX - ImgPos[0];
   PosY = PosY - ImgPos[1];
+  var positionInfo = myImg.getBoundingClientRect();
+  var scale = 1600 / positionInfo.width;
+  PosX = PosX * scale;
+  PosY = PosY * scale;
   console.log(PosX, PosY);
   console.log(getRoom(PosX, PosY));
   search(getRoom(PosX, PosY));
-  //return (String)PosX+"-"+(String)PosY;
 }
 
 function getRoom(px, py){
@@ -111,7 +114,7 @@ function getRoom(px, py){
 	 	var y = parseInt(key.split("-")[1]);
 	 	var diffX = Math.abs(px-x);
 	 	var diffY = Math.abs(py-y);
-	 	if(diffX < 20 && diffY < 20){
+	 	if(diffX < 30 && diffY < 30){
 	 		console.log(rooms[key], key);
 	 		return rooms[key]
 	 	}
@@ -134,7 +137,7 @@ function fillDictionary(){
 	rooms["656-1238"] = 34;
 	rooms["636-1290"] = 35;
 	rooms["608-1348"] = 36;
-	//rooms["608-1348"] = 37;
+	rooms["588-1410"] = 37;
 	rooms["590-1406"] = 37;
 	rooms["836-1168"] = 38;
 	rooms["822-1212"] = 39;
@@ -158,9 +161,28 @@ function fillDictionary(){
 	rooms["1404-1176"] = 59;
 	rooms["1344-1320"] = 60;
 	rooms["1300-1406"] = 61;
-
-
-
+	rooms["1263-1457"] = 62;
+	rooms["1410-834"] = 65;
+	rooms["1412-768"] = 66;
+	rooms["1445-1321"] = 67;
+	rooms["1340-1515"] = 68;
+	rooms["1126-1506"] = 69;
+	rooms["1071-1506"] = 70;
+	rooms["998-1508"] = 71;
+	rooms["944-1506"] = 72;
+	rooms["869-1502"] = 73;
+	rooms["1320-326"] = 74;
+	rooms["1319-287"] = 75;
+	rooms["1319-257"] = 76;
+	rooms["1317-217"] = 77;
+	rooms["1316-181"] = 78;
+	rooms["1316-151"] = 79;
+	rooms["1273-135"] = 80;
+	rooms["1229-138"] = 81;
+	rooms["1188-138"] = 82;
+	rooms["1145-140"] = 83;
+	rooms["1107-140"] = 84;
+	rooms["1071-136"] = 85;
 }
 
 var rooms = {};
