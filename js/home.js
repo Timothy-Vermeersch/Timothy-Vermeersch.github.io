@@ -9,25 +9,9 @@ function search(searchInfo){
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
 	var i = 0;
-	/**
 	for(var count in info) {
-		  if(info[count].includes(searchInfo)){;
-		  	if(i%3==0){
-			  returnInfo.push(info[i+1]);
-			  returnInfo.push(info[i+2]);
-		  	}else if(i%3==1){
-				  returnInfo.push(info[i-1]);
-				  returnInfo.push(info[i+1]);
-		  	}else if(i%3==2){
-				  returnInfo.push(info[i-1]);
-				  returnInfo.push(info[i+1]);
-		  	}
-		  }
-		  i++
-	}
-	**/
-	for(var count in info) {
-		  if(info[count].includes(searchInfo)){;
+		  if(info[count].includes(searchInfo)){
+			  console.log(info);
 		  	if(i%3==0){
 		  	  document.getElementById("r1").innerHTML = searchInfo;
 		  	  document.getElementById("c1").innerHTML = info[i+1];
@@ -44,16 +28,15 @@ function search(searchInfo){
 		  }
 		  i++
 	}
-	return returnInfo;
 }
 
 function searchBar(){
 	var searchInfo = document.getElementById("search").value;
-	if(searchInfo =="emergency"){
-		document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
-		document.getElementById("Topbar").style.backgroundColor = "red";
-		document.getElementById("BottomBar").style.backgroundColor = "red";
-	}
+	//if(searchInfo =="emergency"){
+		//document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
+		//document.getElementById("Topbar").style.backgroundColor = "red";
+		//document.getElementById("BottomBar").style.backgroundColor = "red";
+	//}
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
 	var i = 0;
@@ -76,11 +59,6 @@ function searchBar(){
 		  }
 		  i++
 	}
-<<<<<<< HEAD
-}
-
-=======
-	console.log(returnInfo);
 }
 
 function FindPosition(oElement)
@@ -122,6 +100,7 @@ function GetCoordinates(e)
   PosX = PosX - ImgPos[0];
   PosY = PosY - ImgPos[1];
   console.log(PosX, PosY);
+  console.log(getRoom(PosX, PosY));
   search(getRoom(PosX, PosY));
   //return (String)PosX+"-"+(String)PosY;
 }
@@ -191,4 +170,3 @@ myImg.onmousedown = GetCoordinates;
 fillDictionary();
 
 console.log(search("Social Science"));
->>>>>>> 61e3f85836965fb1adad346db3a830122914add7
