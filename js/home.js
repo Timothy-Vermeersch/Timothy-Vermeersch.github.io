@@ -24,6 +24,10 @@ function search(searchInfo){
 		  		document.getElementById("t1").innerHTML = info[i];
 			  	  document.getElementById("r1").innerHTML = info[i-2];
 			  	  document.getElementById("c1").innerHTML = info[i-1];
+		  	}else{
+		  		document.getElementById("t1").innerHTML = "N/A";
+			  	  document.getElementById("r1").innerHTML = "N/A";
+			  	  document.getElementById("c1").innerHTML = "N/A";
 		  	}
 		  }
 		  i++
