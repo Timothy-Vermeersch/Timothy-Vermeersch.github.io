@@ -8,9 +8,11 @@ function getRoomInfo(){
 function search(searchInfo){
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
+	var found = false;
 	var i = 0;
 	for(var count in info) {
 		  if(info[count].includes(searchInfo)){
+			  found = true;
 			  console.log(info);
 		  	if(i%3==0){
 		  	  document.getElementById("r1").innerHTML = searchInfo;
@@ -24,13 +26,14 @@ function search(searchInfo){
 		  		document.getElementById("t1").innerHTML = info[i];
 			  	  document.getElementById("r1").innerHTML = info[i-2];
 			  	  document.getElementById("c1").innerHTML = info[i-1];
-		  	}else{
-		  		document.getElementById("t1").innerHTML = "N/A";
-			  	  document.getElementById("r1").innerHTML = "N/A";
-			  	  document.getElementById("c1").innerHTML = "N/A";
 		  	}
 		  }
 		  i++
+	}
+	if(!found){
+		document.getElementById("t1").innerHTML = "N/A";
+	  	 document.getElementById("r1").innerHTML = "N/A";
+	  	 document.getElementById("c1").innerHTML = "N/A";
 	}
 }
 
