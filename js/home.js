@@ -197,5 +197,3 @@ var myImg = document.getElementById("Map");
 myImg.onmousedown = GetCoordinates;
 
 fillDictionary();
-
-console.log(search("Social Science"));
