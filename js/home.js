@@ -32,11 +32,11 @@ function search(searchInfo){
 
 function searchBar(){
 	var searchInfo = document.getElementById("search").value;
-	//if(searchInfo =="emergency"){
-		//document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
-		//document.getElementById("Topbar").style.backgroundColor = "red";
-		//document.getElementById("BottomBar").style.backgroundColor = "red";
-	//}
+	if(searchInfo =="emergency"){
+		document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
+		document.getElementById("Topbar").style.backgroundColor = "red";
+		document.getElementById("BottomBar").style.backgroundColor = "red";
+	}
 	var info = getRoomInfo().split("_");
 	var returnInfo = [];
 	var i = 0;
