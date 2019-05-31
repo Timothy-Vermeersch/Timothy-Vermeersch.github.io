@@ -11,7 +11,7 @@ function search(searchInfo){
 	var found = false;
 	var i = 0;
 	for(var count in info) {
-		  if(info[count].includes(searchInfo)){
+		  if(info[count].toLowerCase().trim().includes((searchInfo).toLowerCase().trim())){
 			  found = true;
 			  console.log(info);
 		  	if(i%3==0){
