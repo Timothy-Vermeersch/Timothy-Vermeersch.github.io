@@ -1,0 +1,82 @@
+#Topbar{
+	z-index: -1;
+	background-color: #f55;
+	margin:0px;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:10%;
+	font-family: verdana;
+	overflow: auto;
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#Pages_Logo{
+	max-height: 100%;
+}
+
+#Title{
+	padding-left:1%;
+	color: #ffffff;
+}
+
+.Image_Links::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html{
+	font-family: verdana;
+	z-index: 1;
+}
+
+.Container {
+  z-index: 1;
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-top: 8%;
+}
+
+#AM_Logo{
+	z-index: -1;
+}
+
+.Logo{
+  z-index: 0;
+  float: left;
+  width:250%;
+  box-shadow: 0 20px 44px 0 rgba(0, 0, 0, 0.2), 0 40px 44px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f55;
+  z-index: 1;
+}
+
+.Container:hover .Overlay {
+  opacity: 1;
+  height: 20%;
+}
+
+.Overlay_Text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
