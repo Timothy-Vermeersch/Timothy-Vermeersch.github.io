@@ -13,7 +13,7 @@
         </div>
     </head>
     <body>
-    	<img id = "Map" src = "css/Resources/branhamMap.jpg" alt = "Map">
+    	<img id = "Map" src = "branhamMap.jpg" alt = "Map">
     
     <div target = "bottom" id = "BottomBar">
     	<h3 id = "Time">8:30 AM<BR/>WED APR 17</h3>
@@ -39,9 +39,8 @@
 <script>
 	var d = new Date();
 	var month = d.getMonth();
-	document.getElementById("Time").innerHTML = d.getHours() + ":" + d.getMinutes() + "<BR/>" + (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
+	document.getElementById("Time").innerHTML = d.getHours()%12 + ":" + d.getMinutes() + "<BR/>" + (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
 </script>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/home.js"></script>
-	<script src="js/unify.js"></script>
+    <link href="BHS_Simp.css" rel="stylesheet" type="text/css">
+    <script src="BHS_Simp.js"></script>
 </html>

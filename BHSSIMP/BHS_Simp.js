@@ -38,18 +38,22 @@ function search(searchInfo){
 }
 
 function searchBar(){
+	
 	var searchInfo = document.getElementById("search").value;
 	if(searchInfo =="emergency"){
-		document.getElementById("Map").src = "css/Resources/branhamMapEmergency.jpg";
+		document.getElementById("Map").src = "branhamMapEmergency.jpg";
 		document.getElementById("Topbar").style.backgroundColor = "red";
 		document.getElementById("BottomBar").style.backgroundColor = "red";
 	}
 	var info = getRoomInfo().split("_");
+	document.getElementById("r1").innerHTML = searchInfo;
 	var returnInfo = [];
 	var i = 0;
 	console.log(searchInfo);
 	for(var count in info) {
+		  console.log(info[count])
 		  if(info[count].includes(searchInfo)){;
+		  document.getElementById("Topbar").style.backgroundColor = "red";
 		  	if(i%3==0){
 		  	  document.getElementById("r1").innerHTML = searchInfo;
 		  	  document.getElementById("c1").innerHTML = info[i+1];
@@ -116,6 +120,7 @@ function GetCoordinates(e)
 }
 
 function getRoom(px, py){
+	
 	for (var key in rooms){
 	 	var x = parseInt(key.split("-")[0]);
 	 	var y = parseInt(key.split("-")[1]);
