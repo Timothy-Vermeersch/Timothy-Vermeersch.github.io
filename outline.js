@@ -1,3 +1,4 @@
+console.log("opened")
 function tick() {
   const element = (
     <div>
