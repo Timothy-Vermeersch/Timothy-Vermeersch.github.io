@@ -3,4 +3,4 @@ element = (
   <h1>In progress(Obviously not much lol)</h1>
 )
 const domContainer = document.querySelector('#root');
-ReactDOM.render(e(LikeButton), domContainer);
+ReactDOM.render(element, domContainer);
