@@ -1,3 +1,14 @@
-const topBar = (<div id = "topBar"><h1>Timothy Vermeersch's Github Page</h1><h2>This probably looks like garbage cause I randomly decided to delete the previous code and re write this to learn React</h2></div>);
-ReactDom.render(topBar,document.getElementById('root'));
-console.log("Opened outline")
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
