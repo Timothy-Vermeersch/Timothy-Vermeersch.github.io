@@ -6,5 +6,5 @@ var topBar = (
 )
 
 ReactDom.render(
-  topBar
+  topBar,document.getElementById('root')
 )
