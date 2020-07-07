@@ -5,6 +5,4 @@ var topBar = (
   </div>
 );
 
-ReactDom.render(
-  topBar,document.getElementById('root')
-);
+ReactDom.render(topBar,document.getElementById('root'));
