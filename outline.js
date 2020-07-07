@@ -1,6 +1,2 @@
-'use strict';
-
-const e = <h1>In Progress</h1>
-
-const domContainer = document.querySelector('#root');
-ReactDOM.render(e, domContainer);
+const element = <h1>Hello, world</h1>;
+ReactDOM.render(element, document.getElementById('root'));
