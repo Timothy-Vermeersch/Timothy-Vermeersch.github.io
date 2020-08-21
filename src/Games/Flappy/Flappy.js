@@ -48,7 +48,7 @@ class Flappy extends React.Component{
     moveBird = (height, velocity) => {
         this.birdHeight = height;
         if(height<=15){
-            clearInterval(this.backgroundInterval); 
+            clearInterval(this.backgroundInterval);
             if(this.state.gamePhase==0){
                 return 50;
             }else{
@@ -56,6 +56,7 @@ class Flappy extends React.Component{
                 return height;
             }   
         }else if(height>=100){
+            clearInterval(this.backgroundInterval);
             this.setState({gamePhase: 2});
             return (height - 2);  
         }else if(this.state.gamePhase == 1){
