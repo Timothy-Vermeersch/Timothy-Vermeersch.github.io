@@ -97,7 +97,7 @@ class Flappy extends React.Component{
             <div id = "Flappy_Window" style = {{backgroundPositionX: this.state.backgroundX  + "px"}}>
                 <Bird height = {50} movement = {this.moveBird}/>
                 {this.state.obstacles}
-                <h1 id = "Score">{this.state.gamePhase == 0 ? "Hit spacebar to flap": this.state.score}</h1>
+                <h1 id = "Score">{this.state.gamePhase == 1 ? "Hit spacebar to start.": this.state.score}</h1>
             </div>
         )
     }
