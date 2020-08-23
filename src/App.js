@@ -5,7 +5,7 @@ import Home from './Home';
 import ProjectList from './Projects/ProjectList';
 import GameContainer from './Games/GameContainer';
 import GamesList from './Games/GamesList'
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link, HashRouter as Router, Route } from 'react-router-dom';
 import ProjectRouter from './Projects/ProjectRouter';
 
 function App() {

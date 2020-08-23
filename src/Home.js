@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link, HashRouter as Router, Route } from 'react-router-dom';
 import ProjectTab from './Projects/ProjectTab';
 import GameTab from './Games/GameTab'; 
 function Home(){
