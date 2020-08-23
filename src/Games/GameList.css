@@ -1,7 +1,7 @@
 .Game-Tab{
     width: 30vw;
     height: 30vw;
-    margin-left:2.5vw;
+    margin-left:2vw;
     background-size: contain;
     border: solid salmon 5px;
     background-color: salmon;
@@ -27,6 +27,7 @@
     color:white;
     text-decoration: black underline;
     transition: width 0.1s, height 1s, top 1s;
+    overflow: hidden;
 }
 
 #description{

@@ -9,6 +9,7 @@ class GameTab extends React.Component{
         this.name = props.name;
         this.path = props.path;
         this.description = props.description;
+        this.textTimeout = setTimeout(this.setNull,250);
     }
 
     render(){
@@ -23,7 +24,7 @@ class GameTab extends React.Component{
     }
 
     showDescription = () =>{
-        setTimeout(this.setActual,250);
+        this.textTimeout = setTimeout(this.setActual,250);
     }
 
     setActual = () =>{
@@ -31,6 +32,7 @@ class GameTab extends React.Component{
     }
 
     hideDescription = () =>{
+        clearInterval(this.textTimeout);
         setTimeout(this.setNull,250);
     }
 
