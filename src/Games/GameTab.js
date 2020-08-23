@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, HashRouter as Router, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 class GameTab extends React.Component{
     constructor(props){

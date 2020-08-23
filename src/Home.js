@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link, HashRouter as Router, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 import ProjectTab from './Projects/ProjectTab';
 import GameTab from './Games/GameTab'; 
 function Home(){
-    alert("This site is hosted on Github Pages. Github pages does not support the client side rouing used in this React app. To avoid 404 errors only refresh on this page.");
     return(
         <div id = "Home">
             <div id = "Welcome">
