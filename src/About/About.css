@@ -1,0 +1,45 @@
+.About{
+    background-color: whitesmoke;
+    margin-top: 11vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: fit-content;
+    clear:both;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    border-radius: 5px;
+}
+
+#Headshot{
+    float: right;
+    width: 25%;
+    margin-right: 5%;
+    border: solid 5px black;
+    box-shadow: 4px 4px lightgray;
+}
+
+#About-Title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-size: 5vh;
+    color: slategray;
+    text-shadow: 2px 2px 2px lightgray;
+}
+
+#About-Subtitle{
+    padding-left: -5%;
+    font-size: 4vh;
+    color: rgb(0, 0, 0);
+}
+
+.About-Subsection{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#About-Sectiontitle{
+    padding-left: 5%;
+    font-size: 5vh;
+    text-decoration: underline;
+}
