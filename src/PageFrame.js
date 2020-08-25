@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import pagesLogo from './Images/githubPages.png'
-import { Link, HashRouter as Router, Route } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
 
 function PageFrame(){
     return (
