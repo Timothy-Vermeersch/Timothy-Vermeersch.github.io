@@ -42,3 +42,11 @@
     border: solid 1px salmon;
     margin-left: -1px;
 }
+
+#No-Game{
+    margin-top: 11vh;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    color: white;
+}
