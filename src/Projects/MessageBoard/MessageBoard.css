@@ -1,0 +1,53 @@
+#Message-Board{
+    margin-top: 11vh;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+#newPost:focus{
+    width: 80%;
+    height: 10vh;
+    word-wrap: break-word;
+}
+
+#post{
+    font-size: 1.5vh;
+    background-color: rgb(236, 236, 236);
+}
+
+#username{
+    margin-top: 0.5%;
+    float:right;
+    display:block;
+    margin-right: 0.5%;
+}
+#password{
+    margin-top: 0.5%;
+    float: right;
+    display: block;
+    margin-right: 0.5%;
+}
+
+#Message-Board-Title{
+    display: inline;
+}
+
+#Login-Status{
+    display: block;
+    position: relative;
+    float: right;
+    margin-top:0.5%;
+    color:gray;
+    margin-right: 0.5%;
+}
+
+.Login-Button{
+    margin-top: 0.5%;
+    float: right;
+    display: block;
+    margin-right: 0.5%;
+}
