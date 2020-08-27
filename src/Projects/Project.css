@@ -45,3 +45,7 @@ hr{
     width: 95%;
     border: solid 0.5px lightgray;
 }
+
+.Project-Tab{
+    margin-top: 1vh;
+}
