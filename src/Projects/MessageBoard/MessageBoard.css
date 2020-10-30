@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    display: block;
+    position: relative;
 }
 
 #newPost:focus{
@@ -15,21 +15,28 @@
 }
 
 #post{
-    font-size: 1.5vh;
-    background-color: rgb(236, 236, 236);
+    font-size: 2.5vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#post-username{
+    font-size: 2vh;
 }
 
 #username{
-    margin-top: 0.5%;
-    float:right;
-    display:block;
-    margin-right: 0.5%;
+    position: absolute;
+    top: 1px;
+    right: 1%;
+    height: 2vh;
 }
+
 #password{
-    margin-top: 0.5%;
-    float: right;
-    display: block;
-    margin-right: 0.5%;
+    position: absolute;
+    top: 1px;
+    right: 1%;
+    height: 2vh;
+    margin-top: 3vh;
 }
 
 #Message-Board-Title{
@@ -39,15 +46,16 @@
 #Login-Status{
     display: block;
     position: relative;
-    float: right;
     margin-top:0.5%;
     color:gray;
     margin-right: 0.5%;
+    float: right;
 }
 
 .Login-Button{
     margin-top: 0.5%;
     float: right;
     display: block;
-    margin-right: 0.5%;
+    margin-right: 1%;
+    float:top;
 }

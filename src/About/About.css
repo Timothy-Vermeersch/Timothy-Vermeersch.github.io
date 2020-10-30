@@ -16,6 +16,7 @@
     margin-right: 5%;
     border: solid 5px black;
     box-shadow: 4px 4px lightgray;
+    padding: 1%;
 }
 
 #About-Title{
@@ -29,13 +30,14 @@
 
 #About-Subtitle{
     padding-left: -5%;
-    font-size: 4vh;
+    font-size: 14pt;
     color: rgb(0, 0, 0);
 }
 
 .About-Subsection{
     padding-left: 5%;
     padding-right: 5%;
+    font-size: 14pt;
 }
 
 #About-Sectiontitle{

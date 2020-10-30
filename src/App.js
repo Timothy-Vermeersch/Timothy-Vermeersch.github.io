@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import API from './api';
 import './App.css';
 import PageFrame from './PageFrame';
 import Home from './Home';
@@ -10,6 +12,19 @@ import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProjectRouter from './Projects/ProjectRouter';
 
 function App() {
+  const user = {
+    name: "Timothy"
+  };
+
+  /*API.post(`/api/create/message-board-post`, { boardName: "MainBoard", text: "First message sent through axios", user: "Timothy" })
+    .then(res => {
+      console.log(res);
+      console.log(res.name);
+    })
+    */
+  API.get('/api/read/message-board-posts/MainBoard', {boardName: "MainBoard"}).then(res => {
+    console.log(res.data);
+  })
   return (
     <Router>
       <PageFrame />

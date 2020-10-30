@@ -10,7 +10,7 @@ function PageFrame(){
             <Link to = "/" className = "Pages-logo">
                 <img src={pagesLogo} id = "pages-image"/>
             </Link>
-            <h1 id = "Header-title">Timothy Vermeersch's Github Page</h1>
+            <h1 id = "Header-title">Timothy Vermeersch <br/> Github Pages</h1>
             <div id = "Top-Tabs">
                 <Link className = "Tabs" to = "/Projects">Projects</Link>
                 <Link className = "Tabs" to = "/About">About Me</Link>
