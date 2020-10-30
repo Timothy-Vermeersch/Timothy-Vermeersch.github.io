@@ -1,0 +1,21 @@
+.SpeedReader{
+    margin-top: 11vh;
+    display: block;
+    align-content: center;
+}
+
+#rate{
+    color:white;
+}
+
+#controls{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#speedTextBox{
+    margin-left: 10%;
+    width: 80vw;
+    height: 60vh;
+}
